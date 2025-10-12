@@ -1,0 +1,11 @@
+title: Enkhjargal Lkhagvaa
+subtitle: "Marketing-Focused Software Professional"
+description: "A marketing-focused software professional developing digital solutions that drive engagement and growth."
+
+plugins:
+  - jekyll-postcss-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+postcss:
+  cache: false

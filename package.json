@@ -1,0 +1,22 @@
+{
+  "name": "@enkhjargal/portfolio",
+  "version": "1.0.0",
+  "description": "Professional personal portfolio website for Enkhjargal Lkhagvaa",
+  "author": "Enkhjargal Lkhagvaa <hello@enkhjargal.dev> (https://enkhjargal.dev)",
+  "license": "MIT",
+  "homepage": "https://enkhjargal.dev",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enkhjargal/enkhjargal.github.io.git"
+  },
+  "scripts": {
+    "build": "jekyll build"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.1",
+    "postcss-cli": "^11.0.1"
+  }
+}

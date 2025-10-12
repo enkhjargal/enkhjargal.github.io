@@ -1,0 +1,9 @@
+<section id="socials" class="py-9">
+  <ul class="flex space-x-6">
+  {% for handle in site.data.handles %}
+    <li>
+      <a href="{{ handle.link }}?utm_source=referrer&utm_medium=portfolio&utm_campaign=home_intro" class="after:content-['↗'] after:ps-1 hover:underline" target="_blank">{{ handle.name }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
