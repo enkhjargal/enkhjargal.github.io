@@ -7,10 +7,4 @@ export default {
     './*.md',
     './*.html',
   ],
-  theme: {
-    theme: {
-      extend: {},
-    }
-  },
-  plugins: [],
 };

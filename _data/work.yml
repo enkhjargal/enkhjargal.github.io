@@ -1,0 +1,44 @@
+- company: Hanbird
+  logo: images/work/hanbird.png
+  role: CEO
+  period: "2025 - Present"
+  location: Goyang-si, South Korea
+  description: South Korea–based technology company specializing in custom software development, digital transformation, and enterprise IT solutions. The company delivers scalable web platforms, cloud-native systems, and business automation services that help organizations modernize operations through reliable, secure, and user-centric technology.
+  stack: [Python, Docker, Firebase]
+  url: "https://hanbird.co.kr"
+
+- company: Lagutech
+  logo: images/work/lagutech.png
+  role: CTO
+  period: "2023 - 2025"
+  location: Remote
+  description: Legal technology (LegalTech) company dedicated to modernizing legal services through innovative digital solutions.
+  stack: [Java,SQL,Spring Boot]
+  url: "https://lagutech.mn"
+
+- company: Hanbai Systems
+  logo: images/work/hanbaisystems.png
+  role: CEO
+  period: "2021 - 2023"
+  location: Remote
+  description: Software company specializing in the design and development of e-commerce platforms and sales management systems. The company builds scalable solutions that integrate secure payment gateways, automated invoicing, billing systems, and revenue tracking tools.
+  stack: [PHP, Laravel, Python, Firebase, Cloud SQL, Google Cloud Messaging]
+  url: "https://hanbai.systems"
+
+- company: GoodTech Soft
+  logo: images/work/goodtechsoft.png
+  role: CTO
+  period: "2020 – 2021"
+  location: Ulaanbaatar, Mongolia
+  description: IoT technology company that provides end-to-end software architecture, custom software development, and smart hardware manufacturing. Leveraging its own factory and multidisciplinary engineering teams, the company builds integrated IoT solutions that connect devices, automate business processes, and deliver real-time operational insights.
+  stack: [Node.js, React.js, PostgreSQL, MongoDB, Docker, GitHub CI/CD]
+  url: "https://goodtech.mn"
+
+- company: Nomadev
+  logo: images/work/nomadev.png
+  role: Full-Stack Developer
+  period: "2014 – 2020"
+  location: Ulaanbaatar, Mongolia
+  description: MarTech company focused on building software solutions that attract end users and accelerate sales growth. Its expertise includes advertising technology, Facebook Graph API integration, Web3 applications, hybrid mobile development, and gamified digital experiences that increase customer engagement and marketing effectiveness.
+  stack: [PHP, Laravel, MySQL, HTML5, CSS3, Bootstrap, React Native, Facebook Graph API, Git]
+  url: "#"

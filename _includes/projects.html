@@ -1,0 +1,46 @@
+<section id="projects" class="py-24 px-6 border-t border-rule scroll-mt-20">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="reveal mb-12">
+      <span class="font-mono text-[10px] uppercase tracking-[0.35em] text-ash">Projects</span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-rule">
+      {% for project in site.data.projects %}
+      <article class="bg-paper hover:bg-smoke transition-colors duration-300 reveal reveal-delay-{{ forloop.index }}">
+        <div class="aspect-[4/5] flex flex-col p-8 md:p-10">
+
+          <!-- Logo -->
+          <div class="h-11 flex items-center mb-8 flex-shrink-0">
+            <img
+              src="/assets/{{ project.logo }}"
+              alt="{{ project.name }}"
+              class="h-full w-auto max-w-[130px] object-contain object-left grayscale"
+            >
+          </div>
+
+          <!-- Name -->
+          <h3 class="font-body font-semibold text-ink text-[17px] leading-snug mb-3">{{ project.name }}</h3>
+
+          <!-- Description -->
+          <p class="font-body text-[14px] text-ash leading-relaxed flex-1">{{ project.description }}</p>
+
+          <!-- Link -->
+          {% if project.url %}
+          <a
+            href="{{ project.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6 self-start font-mono text-[11px] uppercase tracking-[0.2em] text-ink border-b border-ink pb-px hover:text-ash hover:border-ash transition-colors duration-200 flex-shrink-0"
+          >
+            Visit ↗
+          </a>
+          {% endif %}
+
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

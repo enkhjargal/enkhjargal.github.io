@@ -1,0 +1,15 @@
+- name: Zoodly
+  logo: images/products/zoodly.png
+  tagline: Social Platform for Dream Exploration
+  description: Dream interpretation and social networking app that allows users to share dream stories, explore an extensive dream dictionary, and read scientific articles about dreams, sleep, and psychology. The platform combines educational content with a community-driven experience to make dream exploration engaging and insightful.
+  category: Consumer Tech
+  stack: [Flutter, Firebase]
+  url: "https://zoodly.app"
+
+- name: Xansh
+  logo: images/products/xansh.jpg
+  tagline: Real-Time Markets. Smarter Decisions.
+  description: Fintech mobile application that provides live fiat and cryptocurrency exchange rates, market news, and real-time alerts. By aggregating data from Mongolian and international sources, the app enables users to monitor currency markets, follow industry updates, and make informed financial decisions from anywhere.
+  category: FinTech
+  stack: [Node.js, PostgreSQL, Flutter, Firebase]
+  url: "https://xansh.app"

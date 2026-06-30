@@ -1,0 +1,56 @@
+<section id="work" class="py-24 px-6 border-t border-rule scroll-mt-20">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="reveal mb-12">
+      <span class="font-mono text-[10px] uppercase tracking-[0.35em] text-ash">Work Experience</span>
+    </div>
+
+    <!-- Work rows separated by 1px rule via gap-px on bg-rule container -->
+    <div class="flex flex-col gap-px bg-rule">
+      {% for job in site.data.work %}
+      <article class="work-row bg-paper px-8 md:px-10 py-8 md:py-10 reveal reveal-delay-{{ forloop.index }} group">
+
+        <div class="flex flex-col md:flex-row md:items-start gap-6">
+
+          <!-- Logo -->
+          <div class="w-20 h-10 shrink-0 flex items-center">
+            <a href="{{ job.url }}" target="_blank">
+              <img
+                src="/assets/{{ job.logo }}"
+                alt="{{ job.company }}"
+                class="h-full w-auto max-w-16 object-contain object-center grayscale group-hover:grayscale-0"
+              >
+            </a>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+              <div>
+                <h3 class="font-body font-semibold text-ink text-[15px]">{{ job.role }}</h3>
+                <p class="font-body text-ash text-[13px] mt-0.5">
+                  {{ job.company }}{% if job.location %} · {{ job.location }}{% endif %}
+                </p>
+              </div>
+              <span class="font-mono text-[11px] text-ash flex-shrink-0">{{ job.period }}</span>
+            </div>
+
+            <p class="font-body text-[14px] text-ash leading-relaxed mb-4">{{ job.description }}</p>
+
+            {% if job.stack %}
+            <div class="flex flex-wrap gap-1.5">
+              {% for tech in job.stack %}
+              <span class="tag-pill font-mono text-[10px] tracking-wide text-ink border border-rule px-2 py-0.5 cursor-default">{{ tech }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+
+        </div>
+
+      </article>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

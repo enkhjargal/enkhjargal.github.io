@@ -1,0 +1,29 @@
+- name: BurenScore
+  description: Mongolia's first credit scoring system — collects financial assets and expense data to assess individuals' creditworthiness and expand access to credit.
+  logo: images/projects/burenscore.webp
+  url: "https://burenscore.mn"
+
+- name: L-SEG
+  description: LINE-based marketing platform for the Japanese market, enabling businesses to deliver cost-effective mass campaigns with automated messaging and audience targeting.
+  logo: images/projects/lseg.png
+  url: "https://lseg.ec-masters.net"
+
+- name: YeppeoÜ
+  description: K-beauty and wellness platform that connects customers with cosmetic clinics and beauty service providers.
+  logo: images/projects/yeppeoyo.png
+  url: "https://yeppeou.ae"
+
+- name: macstore
+  description: Apple retailer offering online and in-store shopping. Its digital platform streamlines ordering, loyalty rewards, memberships, and second-hand device trading.
+  logo: images/projects/macstore.png
+  url: "https://lseg.ec-masters.net"
+
+- name: Lakva Boxing Promotions
+  description: Professional boxing promotion organization founded in Ulaanbaatar, Mongolia, by former WBA world champion Lakva Sim.
+  logo: images/projects/lakvaboxing.png
+  url: "https://lakva-promotions.mn"
+
+- name: Hanamed
+  description: Digital healthcare platform that enhances the patient experience by providing convenient access to medical information and healthcare services.
+  logo: images/projects/hanamed.png
+  url: "https://hanamed.co.kr"

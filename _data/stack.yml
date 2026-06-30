@@ -1,0 +1,42 @@
+- category: Languages
+  items:
+    - Python
+    - TypeScript
+    - JavaScript
+    - Dart
+    - SQL
+    - Bash
+
+- category: Mobile & Web
+  items:
+    - Flutter
+    - Node.js
+    - WebSocket
+    - REST APIs
+
+- category: Cloud & DevOps
+  items:
+    - Google Cloud
+    - Docker
+    - Firebase
+    - GitHub Actions
+
+- category: Databases
+  items:
+    - PostgreSQL
+    - MongoDB
+    - NoSQL
+    - Redis
+
+- category: Analytics & Monitoring
+  items:
+    - Google Analytics
+    - Firebase Analytics
+    - Sentry
+    - Google Tag Manager
+
+- category: Tools & Messaging
+  items:
+    - GitHub
+    - Slack
+    - GCM

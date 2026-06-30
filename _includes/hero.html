@@ -1,0 +1,139 @@
+<section class="relative h-dvh flex overflow-hidden">
+
+  <!-- ── Portrait (mobile: full-bleed background; desktop: right column) ── -->
+  <div class="absolute inset-0 lg:relative lg:inset-auto lg:order-last lg:w-[44%] lg:shrink-0 lg:h-auto">
+    <div class="absolute inset-0 overflow-hidden -z-50">
+      <img
+        src="/assets/images/portrait.png"
+        alt="Enkhjargal Lkhagvaa"
+        class="w-full h-full object-cover object-top grayscale"
+      >
+    </div>
+
+    <!-- Mobile-only wash so text on the left stays readable over the photo -->
+    <div class="lg:hidden absolute inset-0 bg-gradient-to-r from-paper from-10% via-paper/75 via-45% to-transparent"></div>
+
+    <!-- Floating tech badges (desktop only) — randomly placed in the white gap left of the portrait, never over the photo -->
+    <span class="badge-float hidden lg:flex absolute items-center bg-paper border border-rule text-ink font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:0s">Python</span>
+    <span class="badge-float hidden lg:flex absolute items-center bg-ink text-paper font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:0.3s">TypeScript</span>
+    <span class="badge-float hidden lg:flex absolute items-center bg-paper border border-rule text-ink font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:0.5s">Flutter</span>
+    <span class="badge-float hidden lg:flex absolute items-center bg-ink text-paper font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:0.6s">Node.js</span>
+    <span class="badge-float hidden lg:flex absolute items-center bg-paper border border-rule text-ink font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:0.8s">Google Cloud</span>
+    <span class="badge-float hidden lg:flex absolute items-center bg-ink text-paper font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:0.9s">Docker</span>
+    <span class="badge-float hidden lg:flex absolute items-center bg-paper border border-rule text-ink font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:1.0s">Firebase</span>
+    <span class="badge-float hidden lg:flex absolute items-center bg-ink text-paper font-mono text-[11px] px-3 py-1.5 shadow-sm select-none" style="animation-delay:1.2s">Sentry</span>
+  </div>
+
+  <!-- ── Text column ── -->
+  <div class="relative z-10 flex-1 order-first flex flex-col justify-end px-6 py-14 lg:px-14 xl:px-20">
+
+    <!-- Small eyebrow -->
+    <div class="hero-fade mb-4" style="animation-delay: 0.15s">
+      <span class="font-mono text-xs uppercase tracking-[0.35em] text-ash">Portfolio · 2026</span>
+    </div>
+
+    <!-- Name — each word is clipped and slides up -->
+    <h1 aria-label="Enkhjargal Lkhagvaa">
+      <span class="hero-line">
+        <span class="hero-line-inner font-display text-ink leading-tight"
+              style="font-size: clamp(3rem, 9.5vw, 7.5rem); animation-delay: 0.3s">
+          Enkhjargal
+        </span>
+      </span>
+      <span class="hero-line">
+        <span class="hero-line-inner font-display text-ink leading-tight"
+              style="font-size: clamp(3rem, 9.5vw, 7.5rem); animation-delay: 0.55s">
+          Lkhagvaa
+        </span>
+      </span>
+    </h1>
+
+    <!-- Animated divider -->
+    <div class="hero-fade mt-7 w-14 h-px bg-ink origin-left" style="animation-delay: 0.85s"></div>
+
+    <!-- Typed role -->
+    <p class="hero-fade mt-5 font-mono text-[13px] text-ash" style="animation-delay: 1s">
+      <span id="typed-role"></span>
+    </p>
+
+    <!-- Brief tagline -->
+    <p class="hero-fade mt-3 font-body text-[14px] text-ash leading-relaxed max-w-sm" style="animation-delay: 1.1s">
+      {{site.description}}
+    </p>
+
+    <!-- CTAs -->
+    <div class="hero-fade flex flex-wrap gap-3 mt-9" style="animation-delay: 1.3s">
+      <a href="#work"
+         class="bg-ink text-paper font-body font-medium text-[13px] px-6 py-3 hover:bg-ash transition-colors duration-200">
+        View Work →
+      </a>
+      <a href="#contact"
+         class="border border-ink text-ink font-body font-medium text-[13px] px-6 py-3 hover:bg-ink hover:text-paper transition-colors duration-200">
+        Contact Me
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator (desktop) -->
+  <div class="hidden lg:flex absolute bottom-8 left-1/2 flex-col items-center gap-2"
+       style="opacity:0; animation: heroFadeIn 0.6s ease 2s forwards;">
+    <span class="font-mono text-[9px] uppercase tracking-[0.3em] text-rule">Scroll</span>
+    <div class="w-px h-7 bg-rule" style="animation: scrollBounce 1.8s ease-in-out 2.5s infinite;"></div>
+  </div>
+
+</section>
+
+<script>
+(function() {
+  var roles = ['Digital Marketer.', 'Software Development Professional.', 'Growth Strategist.'];
+  var el = document.getElementById('typed-role');
+  if (!el) return;
+  var idx = 0, charIdx = 0, deleting = false;
+  function tick() {
+    var cur = roles[idx];
+    if (deleting) {
+      el.textContent = cur.substring(0, --charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        idx = (idx + 1) % roles.length;
+        setTimeout(tick, 400);
+        return;
+      }
+    } else {
+      el.textContent = cur.substring(0, ++charIdx);
+      if (charIdx === cur.length) {
+        deleting = true;
+        setTimeout(tick, 2400);
+        return;
+      }
+    }
+    setTimeout(tick, deleting ? 35 : 85);
+  }
+  setTimeout(tick, 1400);
+})();
+
+(function() {
+  // Scatter the floating tech badges within the white gap left of the
+  // portrait (top 8%-90%, left -25rem to -2rem), using vertical bands
+  // so badges don't pile up on top of each other.
+  var badges = document.querySelectorAll('.badge-float');
+  var n = badges.length;
+  if (!n) return;
+  var topMin = 8, topMax = 90;
+  var leftMinRem = -25, leftMaxRem = -2;
+  var bandHeight = (topMax - topMin) / n;
+  var order = Array.from({ length: n }, function(_, i) { return i; });
+  for (var i = order.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = order[i]; order[i] = order[j]; order[j] = tmp;
+  }
+  badges.forEach(function(badge, i) {
+    var bandStart = topMin + order[i] * bandHeight;
+    var top = bandStart + bandHeight * 0.15 + Math.random() * (bandHeight * 0.7);
+    var left = leftMinRem + Math.random() * (leftMaxRem - leftMinRem);
+    badge.style.top = top.toFixed(1) + '%';
+    badge.style.left = left.toFixed(1) + 'rem';
+  });
+})();
+</script>

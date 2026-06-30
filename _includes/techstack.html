@@ -1,0 +1,37 @@
+<section id="skills" class="py-24 px-6 border-t border-rule scroll-mt-20">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="reveal mb-12">
+      <span class="font-mono text-[10px] uppercase tracking-[0.35em] text-ash">Tech Stack &amp; Tools</span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      {% for group in site.data.stack %}
+      <div class="reveal reveal-delay-{{ forloop.index }}">
+        <h3 class="font-mono text-[10px] uppercase tracking-[0.25em] text-ash mb-4 pb-3 border-b border-rule">
+          {{ group.category }}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          {% for item in group.items %}
+          <span class="tag-pill font-mono text-[11px] text-ink border border-rule px-3 py-1.5 cursor-default">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Visual tool icons row -->
+    <div class="mt-16 pt-12 border-t border-rule reveal">
+      <p class="font-mono text-[10px] uppercase tracking-[0.35em] text-ash mb-8">Platforms &amp; Services</p>
+      <div class="flex flex-wrap gap-3">
+        {% assign tools = "Google Analytics,Google Cloud,Firebase,Docker,GitHub,Slack,Sentry,Google Tag Manager,GCM,PostgreSQL,MongoDB,Flutter,Node.js,Python" | split: "," %}
+        {% for tool in tools %}
+        <span class="inline-flex items-center font-body text-[13px] text-ink border border-rule px-4 py-2 hover:bg-ink hover:text-paper hover:border-ink transition-colors duration-200 cursor-default">
+          {{ tool }}
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
