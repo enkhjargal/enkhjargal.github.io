@@ -8,6 +8,11 @@
   logo: images/projects/lseg.png
   url: "https://lseg.ec-masters.net"
 
+- name: Tridumkey
+  description: Commercial electronic signature platform developed by a subsidiary of Mobicom Corporation, enabling secure and legally recognized digital document signing.
+  logo: images/projects/tridum.png
+  url: "https://tridumkey.mn"
+
 - name: YeppeoÜ
   description: K-beauty and wellness platform that connects customers with cosmetic clinics and beauty service providers.
   logo: images/projects/yeppeoyo.png
